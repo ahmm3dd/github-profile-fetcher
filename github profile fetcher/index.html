@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inp-box">
+            <input type="text" id="usernameInput" placeholder="Enter GitHub Username">
+            <button class="btn" id="fetchButton" onclick="fetchGitHubProfile()">Get Details</button>
+        </div>
+        <div class="loader" id="loader"></div>
+        <div class="card">
+            <div class="img-box">
+                <img id="avatar" src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
+            </div>
+            <div class="user-details">
+                <h2 id="name">User Name</h2>
+                <p id="username" class="info">User Name:</p>
+                <p id="email" class="info">Email:</p>
+                <p id="bio" class="info">Bio:</p>
+                <div class="p-box">
+                    <p id="repos" class="info">Repositories: 0</p>
+                    <p id="followers" class="info">Followers: 0</p>
+                    <p id="following" class="info">Following: 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="theme-toggle" onclick="toggleTheme()">light</div>
+
+    <script src="App.js"></script>
+</body>
+
+</html>
